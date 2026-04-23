@@ -85,9 +85,25 @@ applicable agreement for further details.
 )
 (pin
 	(output)
+	(rect 856 136 1032 152)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "CARRY" (rect 90 0 130 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
 	(rect 1000 728 1176 744)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "D 0" (rect 90 0 107 12)(font "Arial" ))
+	(text "D0" (rect 90 0 104 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -103,23 +119,7 @@ applicable agreement for further details.
 	(output)
 	(rect 928 1528 1104 1544)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "D 1" (rect 90 0 107 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 856 136 1032 152)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "CARRY" (rect 90 0 130 12)(font "Arial" ))
+	(text "D1" (rect 90 0 104 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -838,11 +838,6 @@ applicable agreement for further details.
 	(pt 408 264)
 )
 (connector
-	(text "AON" (rect 378 88 401 100)(font "Arial" ))
-	(pt 368 104)
-	(pt 416 104)
-)
-(connector
 	(text "A1N" (rect 378 152 399 164)(font "Arial" ))
 	(pt 368 168)
 	(pt 408 168)
@@ -1328,6 +1323,11 @@ applicable agreement for further details.
 (connector
 	(pt 1000 736)
 	(pt 1016 736)
+)
+(connector
+	(text "A0N" (rect 378 88 399 100)(font "Arial" ))
+	(pt 368 104)
+	(pt 440 104)
 )
 (junction (pt 320 104))
 (junction (pt 1000 736))

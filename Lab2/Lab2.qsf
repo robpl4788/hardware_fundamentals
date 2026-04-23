@@ -50,3 +50,41 @@ set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name BDF_FILE TETRA_ADDER.bdf
+set_global_assignment -name BDF_FILE TETRA_to_7_seg.bdf
+set_global_assignment -name BDF_FILE Lab2.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_H5 -to SW1
+set_location_assignment PIN_H6 -to SW2
+set_location_assignment PIN_G4 -to SW3
+set_location_assignment PIN_B18 -to A[0]
+set_location_assignment PIN_F15 -to A[1]
+set_location_assignment PIN_A19 -to A[2]
+set_location_assignment PIN_B19 -to A[3]
+set_location_assignment PIN_C19 -to A[4]
+set_location_assignment PIN_D19 -to A[5]
+set_location_assignment PIN_G15 -to A[6]
+set_location_assignment PIN_E11 -to D[0]
+set_location_assignment PIN_F11 -to D[1]
+set_location_assignment PIN_H12 -to D[2]
+set_location_assignment PIN_H13 -to D[3]
+set_location_assignment PIN_G12 -to D[4]
+set_location_assignment PIN_F12 -to D[5]
+set_location_assignment PIN_F13 -to D[6]
+set_location_assignment PIN_A13 -to C[0]
+set_location_assignment PIN_B13 -to C[1]
+set_location_assignment PIN_C13 -to C[2]
+set_location_assignment PIN_A14 -to C[3]
+set_location_assignment PIN_B14 -to C[4]
+set_location_assignment PIN_E14 -to C[5]
+set_location_assignment PIN_A15 -to C[6]
+set_location_assignment PIN_D15 -to B[0]
+set_location_assignment PIN_A16 -to B[1]
+set_location_assignment PIN_B16 -to B[2]
+set_location_assignment PIN_E15 -to B[3]
+set_location_assignment PIN_A17 -to B[4]
+set_location_assignment PIN_B17 -to B[5]
+set_location_assignment PIN_F14 -to B[6]
+set_location_assignment PIN_J6 -to SW0
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
