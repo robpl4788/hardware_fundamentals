@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16U484C6
-set_global_assignment -name TOP_LEVEL_ENTITY FDD_Lab7
+set_global_assignment -name TOP_LEVEL_ENTITY Design_Assignment
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 12.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:32:41  FEBRUARY 06, 2013"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -50,14 +50,10 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name VHDL_FILE CLOCK.vhd
 set_global_assignment -name VHDL_FILE DECODER_LIGHT.vhd
-set_global_assignment -name BDF_FILE REQUEST_MANAGER.bdf
-set_global_assignment -name BDF_FILE cnt_4bit.bdf
-set_global_assignment -name BDF_FILE Reg_4bit.bdf
-set_global_assignment -name VHDL_FILE BCD_7Seg_DEC.vhd
-set_global_assignment -name CDF_FILE ../Lab2/output_files/Chain1.cdf
-set_global_assignment -name CDF_FILE ../Lab2/output_files/Chain2.cdf
+set_global_assignment -name VHDL_FILE REQUEST_MANAGER.bdf
+set_global_assignment -name BDF_FILE Design_Assignment.bdf
 set_location_assignment PIN_F1 -to Button2
-set_location_assignment PIN_G21 -to Clk
+set_location_assignment PIN_G21 -to CLK50MHZ
 set_location_assignment PIN_E11 -to Hex0[0]
 set_location_assignment PIN_F11 -to Hex0[1]
 set_location_assignment PIN_H12 -to Hex0[2]
@@ -91,4 +87,15 @@ set_location_assignment PIN_J6 -to SW[0]
 set_location_assignment PIN_H5 -to SW[1]
 set_location_assignment PIN_H6 -to SW[2]
 set_location_assignment PIN_G4 -to SW[3]
+set_location_assignment PIN_G5 -to SW[4]
+set_location_assignment PIN_J1 -to led[0]
+set_location_assignment PIN_J2 -to led[1]
+set_location_assignment PIN_J3 -to led[2]
+set_location_assignment PIN_H1 -to led[3]
+set_location_assignment PIN_F2 -to led[4]
 set_location_assignment PIN_G3 -to Button1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SDC_FILE Design_Assignment.sdc
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

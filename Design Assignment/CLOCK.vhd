@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity CLOCK is
 port (
-	clk50MHz: in std_logic; -- 50 Hz, period 20 ms 
+	clk50MHz: in std_logic; -- 50 MHz, period 20 ms 
 	clk_second_count: out integer range 0 to 9:= 0;
 	update_lights: out std_logic);
 end CLOCK;
@@ -27,7 +27,7 @@ begin
   process(clk50MHz)
   begin
     if (clk50MHz='1') then
-      if (clk50MHz_count=24999999) then
+      if (clk50MHz_count<24999999) then
         clk50MHz_count<=clk50MHz_count+ 1;
       else
         clk50MHz_count<=0;
