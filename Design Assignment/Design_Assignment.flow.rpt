@@ -1,5 +1,5 @@
 Flow report for Design_Assignment
-Thu May 21 10:30:06 2026
+Thu May 21 16:52:43 2026
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Thu May 21 10:30:06 2026      ;
+; Flow Status                        ; Successful - Thu May 21 16:52:43 2026      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Design_Assignment                          ;
 ; Top-level Entity Name              ; Design_Assignment                          ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C16U484C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 101 / 15,408 ( < 1 % )                     ;
-;     Total combinational functions  ; 101 / 15,408 ( < 1 % )                     ;
+; Total logic elements               ; 106 / 15,408 ( < 1 % )                     ;
+;     Total combinational functions  ; 106 / 15,408 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 33 / 15,408 ( < 1 % )                      ;
 ; Total registers                    ; 33                                         ;
-; Total pins                         ; 18 / 347 ( 5 % )                           ;
+; Total pins                         ; 19 / 347 ( 5 % )                           ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 516,096 ( 0 % )                        ;
 ; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                            ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/21/2026 10:29:57 ;
+; Start date & time ; 05/21/2026 16:47:30 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Design_Assignment   ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 48759582205752.177933059710964 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 48759582205752.177935325021820 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)         ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --          ; --             ;
@@ -92,12 +92,16 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4666 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:03     ; 1.0                     ; 4954 MB             ; 00:00:03                           ;
-; Assembler                 ; 00:00:00     ; 1.0                     ; 4585 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4637 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4542 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:05     ; --                      ; --                  ; 00:00:06                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4666 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 4967 MB             ; 00:00:03                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4585 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4637 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4558 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4554 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4554 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4554 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4554 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:14     ; --                      ; --                  ; 00:00:06                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,6 +115,10 @@ applicable agreement for further details.
 ; Assembler                 ; C-204-237-23     ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; C-204-237-23     ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; C-204-237-23     ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; C-204-237-23     ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; C-204-237-23     ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; C-204-237-23     ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; C-204-237-23     ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -122,6 +130,10 @@ quartus_fit --read_settings_files=off --write_settings_files=off Design_Assignme
 quartus_asm --read_settings_files=off --write_settings_files=off Design_Assignment -c Design_Assignment
 quartus_sta Design_Assignment -c Design_Assignment
 quartus_eda --read_settings_files=off --write_settings_files=off Design_Assignment -c Design_Assignment
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Design_Assignment -c Design_Assignment --vector_source=C:/Users/21494561/Downloads/hardware_fundamentals-main/hardware_fundamentals-main/Design_Assignment/Waveform1.vwf --testbench_file=C:/Users/21494561/Downloads/hardware_fundamentals-main/hardware_fundamentals-main/Design_Assignment/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/21494561/Downloads/hardware_fundamentals-main/hardware_fundamentals-main/Design_Assignment/simulation/qsim/ Design_Assignment -c Design_Assignment
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Design_Assignment -c Design_Assignment --vector_source=C:/Users/21494561/Downloads/hardware_fundamentals-main/hardware_fundamentals-main/Design_Assignment/Waveform1.vwf --testbench_file=C:/Users/21494561/Downloads/hardware_fundamentals-main/hardware_fundamentals-main/Design_Assignment/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/21494561/Downloads/hardware_fundamentals-main/hardware_fundamentals-main/Design_Assignment/simulation/qsim/ Design_Assignment -c Design_Assignment
 
 
 
