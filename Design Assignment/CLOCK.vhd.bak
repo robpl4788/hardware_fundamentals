@@ -1,0 +1,52 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all; -- Uncomment if you use the unsigned type
+-- Add any other standard package you may need
+
+-- Use this entity as a template for your own circuit. Entity can be any name
+-- Port names must include clk, key, sw, led, hex0, hex1 to be matched with their panel counterparts
+-- You may use std_logic_vector or unsigned for multibit ports
+-- Port bit range can be different than number of devices if you do not need them all
+-- Each port must be defined in its own line and you may omit or comment unused ports
+
+entity CLOCK is
+port (
+  clk50MHz: in std_logic; -- 50 Hz, period 20 ms 
+  sw:      in std_logic_vector(9 downto 0);
+  led:     out std_logic_vector(9 downto 0);
+  hex0:    out std_logic_vector(6 downto 0);
+  hex1:    out std_logic_vector(6 downto 0));
+end circuit;
+
+-- There are no restrictions in architecture definition
+architecture description of circuit is
+  signal clk: std_logic:='0';
+  signal clk50MHz_count: integer range 0 to 50000000:=0;
+  signal s_count: integer range 0 to 9:= 0;
+  signal update_lights: std_logic:='0';
+  signal LOUT: integer range 0 to 4:= 0;
+begin
+
+
+  process(clk)
+  begin
+    if (clk='1') then
+
+      if (s_count = 0) then s_count <= 5; -- Resets s_count on the loop when s_count = 4
+      else s_count <= s_count - 1; end if;
+    end if;
+  end process;
+  
+  process(clk50MHz)
+  begin
+    if (clk50MHz='1') then
+      if (clk50MHz_count=24999999) then
+        clk50MHz_count<=clk50MHz_count+ 1;
+      else
+        clk50MHz_count<=0;
+        clk<=not clk;
+      end if;
+    end if;
+  end process;
+    
+end description;
